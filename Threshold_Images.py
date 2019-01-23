@@ -3,8 +3,9 @@ import numpy as np
 import matplotlib.pyplot as plt
 import time
 
-pic = Image.open("tick.png")
+pic = Image.open("img.png")
 iar =  np.array(pic)
+iab=  np.array(pic)
 balancedArray =[]
 def threshold(imageArray):
     newImageArray = imageArray
@@ -33,5 +34,11 @@ def threshold(imageArray):
     return newImageArray
 final_pic = threshold(iar)
 #print iar
-plt.imshow(final_pic)
+fig = plt.figure()
+axis1 = fig.add_subplot(121)
+axis2 = fig.add_subplot(122)
+
+axis1.imshow(iab)
+axis2.imshow(final_pic)
+
 plt.show()
