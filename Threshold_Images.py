@@ -10,7 +10,7 @@ balancedArray =[]
 def threshold(imageArray):
     newImageArray = imageArray
     for eachRow in imageArray:
-        for eachPixel in eachRow:
+
          for eachPixel in eachRow:
             print(eachPixel)
             #print len(eachPixel[:3])
